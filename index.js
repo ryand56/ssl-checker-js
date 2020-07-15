@@ -7,5 +7,8 @@ app.get("/", function (req, res) {
 });
 
 app.get("/check", function (req, res) {
-    
+    if (req.query.url.includes("https://")) return res.json({status: "warn", message: "Protocol not needed"});
+    checker.get(req.query.url).then(function (cert) {
+        res.json({status: "ok", issuer: cert.issuer.CN});
+    });
 });
