@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/elementemerald/ssl-checker-js/issues"
   },
-  "homepage": "https://github.com/elementemerald/ssl-checker-js#readme"
+  "homepage": "https://github.com/elementemerald/ssl-checker-js#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
