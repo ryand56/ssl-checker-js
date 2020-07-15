@@ -12,3 +12,5 @@ app.get("/check", function (req, res) {
         res.json({status: "ok", issuer: cert.issuer.CN});
     });
 });
+
+app.listen(80);
